@@ -35,4 +35,34 @@ Los estilos van aquí
         margin: 10px;
     }
 
+
+
+    #cajaMediana {
+        background-color: #daec00; /* Color de la caja mediana */
+        height: 150px; /* Altura de la caja mediana */
+        margin: 10px;
+    }
+
+    .containerTresCajas {
+        display: flex;
+        width: 100%;
+    }
+    
+    #caja3,
+    #caja4,
+    #caja5 {
+
+        background-color:#4a89d0;
+        height: 100px;
+        flex: 1; /* Esto hace que cada caja ocupe el mismo ancho */
+        margin: 10px;
+    }
+
+
+
+
+
+
+
+
 }
