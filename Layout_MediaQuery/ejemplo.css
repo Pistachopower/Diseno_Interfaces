@@ -1,0 +1,24 @@
+/* Estilos generales para todos los dispositivos */
+body {
+    background-color: rgb(156, 38, 38);
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Media query para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        color: darkblue;
+    }
+
+    .container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+div{
+    border: 1px solid blue;    
+}
+
+.first {
+    position: fixed;
+    left: 20px;
+}
+
+body{
+    height: 200vh;
+}

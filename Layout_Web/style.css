@@ -1,0 +1,11 @@
+.a{
+    background-color: gray;
+    text-align: center;
+
+}
+
+.b {
+
+    display: inline-block;
+    background-color: gray;
+}
