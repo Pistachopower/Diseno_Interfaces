@@ -1,18 +1,24 @@
-/* Estilos generales para todos los dispositivos */
-body {
-    background-color: rgb(156, 38, 38);
-    color: black;
-    font-family: Arial, sans-serif;
-}
+/*
+Tener en cuenta consulta de medios: ancho, alto o
+resolucion de la pantalla
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
+Ejemplo de consulta de medios:
+@media media-type (media-feature){
+Los estilos van aquí
+ }
 
-/* Media query para dispositivos con un ancho máximo de 600px */
-@media (max-width: 600px) {
+@media: indica cómo se verá el css en funcion de ciertas condiciones
+
+
+*/
+
+
+
+
+
+
+/*monitor: funciona*/
+@media (width >= 360px) and (width <= 2000px) {
     body {
         background-color: lightblue;
         color: darkblue;
@@ -21,4 +27,5 @@ body {
     .container {
         width: 100%;
     }
-}
+  }
+  
