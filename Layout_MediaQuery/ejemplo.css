@@ -12,7 +12,7 @@ Los estilos van aquí
 
 
 /*indica anchura minima y maxima*/
-@media (min-width: 320px) and (max-width: 2000px) {
+@media (min-width: 100px) and (max-width: 2000px) {
     body {
         background-color: rgb(254, 255, 255);
 
@@ -47,7 +47,7 @@ Los estilos van aquí
         display: flex;
         width: 100%;
     }
-    
+
     #caja3,
     #caja4,
     #caja5 {
@@ -58,9 +58,22 @@ Los estilos van aquí
         margin: 10px;
     }
 
+    .containerCuatroCajas{
+        display: flex;
+        width: 100%;
+    }
 
+    #caja6,
+    #caja7,
+    #caja8,
+    #caja9
+    {
 
-
+        background-color:#e0e0e0;
+        height: 100px;
+        flex: 1; /* Esto hace que cada caja ocupe el mismo ancho */
+        margin: 10px;
+    }
 
 
 
