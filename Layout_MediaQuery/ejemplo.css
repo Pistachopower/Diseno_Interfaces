@@ -12,6 +12,10 @@ Los estilos van aquí
 
 
 /*indica anchura minima y maxima*/
+
+
+
+
 @media (min-width: 100px) and (max-width: 3000px) {
     body {
         background-color: rgb(254, 255, 255);
