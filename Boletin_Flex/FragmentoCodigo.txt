@@ -1,0 +1,37 @@
+    <!--HEADER-->
+    <header></header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Aqui va el contenido-->
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Este es el contenido principal de la página.</p>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Nosotros</h2>
+            <p>Información sobre nuestra empresa.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Cómo contactarnos.</p>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Noticias</h2>
+        <p>Últimas noticias y actualizaciones.</p>
+    </aside>
+
+    <!--final de la página-->
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>

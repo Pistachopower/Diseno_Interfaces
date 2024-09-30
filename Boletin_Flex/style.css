@@ -1,70 +1,74 @@
-/*HEADER INICIO*/
+/** estilo general sin flex box por defecto */
 
-/* Reset margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Header styling */
-  .header {
-    display: flex;
-    justify-content: space-between; /* Space between logo and navbar */
-    align-items: center; /* Center items vertically */
-    background-color: #333; /* Dark background for the header */
-    padding: 10px 20px; /* Padding around the header */
-  }
-  
-  /* Logo styling */
-  .logo img {
-    width: 100px; /* Fixed width for the logo */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Navbar styling */
-  .navbar {
-    display: flex; /* Flexbox for navbar */
-    align-items: center; /* Center avatar with navbar links */
-    background: linear-gradient(to right, #003DA5, #0076D3); /* PlayStation-style gradient */
-    padding: 10px 20px; /* Padding around the navbar */
-    border-radius: 5px; /* Rounded corners */
-  }
-  
-  .navbar ul {
-    list-style-type: none; /* Remove bullet points from the list */
-    display: flex; /* Use flexbox for horizontal layout */
-    margin-right: 20px; /* Space between links and avatar */
-  }
-  
-  .navbar li {
-    margin-left: 20px; /* Space between each menu item */
-  }
-  
-  .navbar a {
-    color: white; /* White text for the links */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 16px; /* Base font size */
-    transition: font-size 0.2s ease; /* Transition for hover effect */
-  }
-  
-  /* Responsive font sizes */
-  .navbar a:hover {
-    text-decoration: underline; /* Underline effect on hover */
-    font-size: 18px; /* Increase font size on hover */
-  }
-  
-  /* Avatar styling */
-  .avatar {
-    margin-left: 20px; /* Space between links and avatar */
-  }
-  
-  .avatar img {
-    width: 40px; /* Width for the avatar */
-    height: 40px; /* Height for the avatar */
-    border-radius: 50%; /* Circular avatar */
-  }
-  
-  /*HEADER FINAL*/
+/*diseño escritorio*/
 
-  
+/* Estilos para la cabecera */
+.cajaHeader {
+  display: flex; /* Aplica Flexbox a la cabecera para alinear los elementos en línea horizontal. */
+  justify-content: space-between; /* Distribuye los elementos de manera que haya espacio entre el logo y el menú. */
+  align-items: center; /* Centra verticalmente los elementos dentro de la cabecera. */
+  width: 100%; /* Hace que la cabecera ocupe todo el ancho de la página. */
+}
+
+#caja1 {
+  background-color: rgb(235, 126, 24); /* Asigna un color de fondo al logo. */
+  margin: 10px; /* Aplica un margen externo de 10px alrededor del logo. */
+  flex: 0 1 auto; /* Permite que el logo tenga un tamaño flexible que no crezca más de lo necesario, pero con cierto margen. */
+}
+
+#caja2, #caja3, #caja4 {
+  background-color: rgb(235, 126, 24); /* Asigna un color de fondo igual para los elementos del menú. */
+  margin: 10px; /* Aplica un margen de 10px alrededor de cada elemento del menú. */
+  flex: 1; /* Cada elemento del menú ocupa el mismo espacio, distribuyendo el ancho entre ellos de manera equitativa. */
+}
+
+/*termina header*/
+
+/*inicio Main*/
+
+/* Estilos para el contenedor principal */
+.cajaMain {
+  display: flex; /* Aplica Flexbox para organizar el perfil, el feed y la barra lateral en una sola fila. */
+  justify-content: space-between; /* Coloca los elementos de manera que haya espacio entre el perfil y la barra lateral, con el feed ocupando el centro. */
+  width: 100%; /* Asegura que el contenedor principal ocupe todo el ancho disponible de la página. */
+}
+
+#caja5 {
+  background-color: rgb(241, 176, 114); /* Asigna un color de fondo a la sección del perfil. */
+  height: 250px; /* Define una altura fija para la caja del perfil. */
+  flex: 0 0 200px; /* Fija el ancho de la caja del perfil a 200px. No crecerá ni se reducirá. */
+  margin: 10px; /* Aplica un margen externo de 10px alrededor de la caja del perfil. */
+}
+
+#caja6 {
+  background-color: rgb(241, 176, 114); /* Asigna un color de fondo al feed. */
+  height: 250px; /* Define una altura fija para el feed. */
+  flex: 1; /* Hace que el feed ocupe todo el espacio restante disponible entre el perfil y la barra lateral. */
+  margin: 10px; /* Aplica un margen externo de 10px alrededor del feed. */
+}
+
+#caja7 {
+  background-color: rgb(241, 176, 114); /* Asigna un color de fondo a la barra lateral. */
+  height: 250px; /* Define una altura fija para la barra lateral. */
+  flex: 0 0 200px; /* Fija el ancho de la barra lateral a 200px. No crecerá ni se reducirá. */
+  margin: 10px; /* Aplica un margen externo de 10px alrededor de la barra lateral. */
+}
+
+/*fin Main*/
+
+/*inicio footer*/
+
+/* Estilos para el pie de página */
+.cajaFooter {
+  display: flex; /* Aplica Flexbox para organizar las columnas del pie de página en una fila. */
+  width: 100%; /* Asegura que el pie de página ocupe todo el ancho de la página. */
+}
+
+#caja8, #caja9, #caja10, #caja11 {
+  background-color: #979090; /* Asigna un color de fondo a cada columna del pie de página. */
+  height: 250px; /* Define una altura fija para cada columna del pie de página. */
+  flex: 1; /* Hace que cada columna ocupe el mismo espacio disponible en el pie de página, distribuyéndolo de manera equitativa. */
+  margin: 10px; /* Aplica un margen externo de 10px alrededor de cada columna. */
+}
+
+/*fin footer*/

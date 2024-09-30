@@ -18,7 +18,9 @@ Su tarea consiste en crear un diseño responsivo para el panel de control de las
 3. En escritorio:
 
     La cabecera debe tener el logotipo a la izquierda y el menú de navegación a la derecha.
+    
     El contenido principal debe ser una fila con el perfil a la izquierda, el feed en el centro y la barra lateral a la derecha.
+    
     El pie de página debe tener 4 columnas de igual anchura.
 
 4. En móviles (ancho de pantalla inferior a 768px):

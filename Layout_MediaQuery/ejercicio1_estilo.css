@@ -1,0 +1,27 @@
+.padre{
+    list-style-type: none;
+    display: flex;
+    visibility: visible;
+    
+    justify-content: space-between;
+    padding: 0;
+    margin: 5px;
+    font-size: 25px;
+    text-align: left
+    
+}
+
+.lista-Igual{
+    
+    background-color: aqua;
+    width: 310px;
+    height: 100px;  
+    margin: 0px;
+    padding: 1px;
+    
+}
+
+ul{
+    margin: 25px;
+}
+
