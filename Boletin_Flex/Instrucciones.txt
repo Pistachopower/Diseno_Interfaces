@@ -1,0 +1,47 @@
+# Ejercicio avanzado de Flexbox: Diseño de panel de medios sociales
+
+Su tarea consiste en crear un diseño responsivo para el panel de control de las redes sociales utilizando CSS flexbox. El diseño debe adaptarse a diferentes tamaños de pantalla e incluir los siguientes componentes:
+
+1. 1. Una cabecera con un logotipo y un menú de navegación
+2. Un área de contenido principal con:
+
+    Una sección de perfil de usuario
+    Un feed de publicaciones
+    Una barra lateral con temas de tendencia y sugerencias de seguimiento
+
+3. Un pie de página con varias columnas
+
+## Requisitos:
+
+1. Usar flexbox para todos los layouts (evitar usar grid o float).
+2. El diseño debe ser responsive y funcionar bien tanto en dispositivos de escritorio como móviles.
+3. En escritorio:
+
+    La cabecera debe tener el logotipo a la izquierda y el menú de navegación a la derecha.
+    El contenido principal debe ser una fila con el perfil a la izquierda, el feed en el centro y la barra lateral a la derecha.
+    El pie de página debe tener 4 columnas de igual anchura.
+
+4. En móviles (ancho de pantalla inferior a 768px):
+
+    La cabecera debe apilar el logotipo sobre el menú de navegación.
+    El contenido principal debe ser una sola columna con el orden: perfil, feed, barra lateral.
+    El pie de página debe tener 2 columnas.
+
+5. Implementa los siguientes retos específicos de flexbox:
+
+    Usar `flex-grow` para hacer que el feed ocupe cualquier espacio extra disponible en el área de contenido principal.
+    Utiliza `order` para cambiar la disposición de los elementos en móviles.
+    Implementar una rejilla flexible de tarjetas para las entradas del feed (3 columnas en escritorio, 2 en tablet, 1 en móvil).
+    Usa `align-self` para centrar verticalmente el logo en la cabecera mientras mantienes otros elementos en la parte superior.
+
+6. 6. Añade interactividad:
+
+    Al pasar el ratón por encima de los elementos de navegación, utiliza CSS para cambiar los colores.
+    Implementa una cabecera «pegajosa» que permanezca en la parte superior de la página al desplazarse.
+
+Bonificación:
+
+    Implementa un modo oscuro utilizando propiedades CSS personalizadas.
+    Crea un botón «cargar más» en la parte inferior del feed que esté siempre centrado.
+
+Recuerda utilizar etiquetas HTML5 semánticas cuando proceda y comentar tu CSS para explicar tus elecciones de flexbox.
