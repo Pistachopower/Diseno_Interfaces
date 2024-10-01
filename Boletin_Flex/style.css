@@ -1,7 +1,131 @@
 /** estilo general sin flex box por defecto */
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la cabecera */
+header {
+  
+  color: white;
+  padding: 15px;
+}
+
+.cajaHeader {
+  display: flex;
+  flex-direction: column; /* Para pantallas pequeñas */
+  align-items: center;
+  text-align: center;
+}
+
+.cajaHeader #caja1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+/* Estilos para el área principal */
+.cajaMain {
+  display: flex;
+  flex-direction: column; /* Columnas en pantallas pequeñas */
+  align-items: center;
+}
+
+.cajaMain div {
+  background-color: #f1b072;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+  
+  color: white;
+  padding: 20px;
+}
+
+.cajaFooter {
+  display: flex;
+  flex-direction: column; /* Columnas en pantallas pequeñas */
+}
+
+.cajaFooter div {
+  background-color: #979090;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 768px) {
+  .cajaHeader {
+    flex-direction: row; /* Cambia a filas en pantallas grandes */
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  .cajaMain {
+    flex-direction: row; /* Cambia a filas en pantallas grandes */
+    justify-content: space-between;
+  }
+
+  .cajaMain div {
+    width: auto;
+  }
+
+  #caja5, #caja7 {
+    flex: 0 0 200px; /* Ancho fijo para perfil y sidebar */
+  }
+
+  #caja6 {
+    flex: 1; /* El feed ocupa el espacio restante */
+  }
+
+  .cajaFooter {
+    flex-direction: row; /* Cambia a filas en pantallas grandes */
+  }
+
+  .cajaFooter div {
+    flex: 1; /* Las columnas del footer ocupan el mismo espacio */
+    margin: 10px;
+  }
+}
+
+
+
 
 /*diseño escritorio*/
-
+@media (min-width: 100px) and (max-width: 3000px) {
 /* Estilos para la cabecera */
 .cajaHeader {
   display: flex; /* Aplica Flexbox a la cabecera para alinear los elementos en línea horizontal. */
@@ -72,3 +196,14 @@
 }
 
 /*fin footer*/
+
+
+}
+
+
+
+
+
+
+
+
