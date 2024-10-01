@@ -79,7 +79,7 @@ footer {
 }
 
 /* Media Queries para pantallas grandes */
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .cajaHeader {
     flex-direction: row; /* Cambia a filas en pantallas grandes */
     justify-content: space-between;
@@ -125,7 +125,7 @@ footer {
 
 
 /*diseño escritorio*/
-@media (min-width: 100px) and (max-width: 3000px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
 /* Estilos para la cabecera */
 .cajaHeader {
   display: flex; /* Aplica Flexbox a la cabecera para alinear los elementos en línea horizontal. */
