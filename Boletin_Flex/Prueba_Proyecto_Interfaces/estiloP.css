@@ -10,7 +10,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*da espacio a los elementos del menu*/
     align-items: center;
     padding: 10px;
     background-color: #333;
@@ -79,6 +79,9 @@ body {
     padding: 10px;
 }
 
+/*si  el maximo de pantalla es igual a 768
+On mobile (screen width less than 768px):
+*/
 @media (max-width: 768px) {
     body {
         background-color: rgb(97, 87, 87);
@@ -89,10 +92,12 @@ body {
         align-items: flex-start;
     }
 
+    /*colocamos en columna las section*/
     .main-content {
         flex-direction: column;
     }
 
+    /*abrazamos los div en una sola fila*/
     .footer {
         flex-wrap: wrap;
     }
