@@ -1,0 +1,94 @@
+/* General */
+body {
+    font-family: 'Cinzel', serif; /* Fuente temática inspirada en la Tierra Media */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333;
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #8d5524; /* Bordes marrones para las secciones */
+    background-color: #faf3e0; /* Color de fondo tipo pergamino */
+}
+h2 {
+    color: #4b5320; /* Verde oscuro para los títulos */
+    text-align: center;
+}
+/* Menú Superior */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4b5320; /* Verde oscuro temático */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    width: 80px; /* Tamaño del logo */
+    height: auto;
+}
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    display: inline;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffd700; /* Color dorado inspirado en los anillos */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.menu a:hover {
+    background-color: #ffd700; /* Dorado brillante en hover */
+    color: #4b5320; /* Verde oscuro para contraste */
+}
+/* Hero Banner */
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #8d5524; /* Borde para separar el banner del contenido */
+}
+/* Botones */
+.cta-buttons button, form button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4b5320; /* Verde oscuro */
+    color: white;
+    border: 2px solid #8d5524; /* Borde marrón */
+    cursor: pointer;
+}
+.cta-buttons button:hover, form button:hover {
+    background-color: #6b8e23; /* Cambio de color al pasar el ratón */
+}
+/* Servicios, Destinos, Guías */
+.services-grid, .destinations-gallery, .team-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.service, .destination, .guide {
+    text-align: center;
+    border: 2px solid #8d5524; /* Bordes marrones */
+    background-color: #faf3e0;
+    padding: 15px;
+}
+
+.service img, .destination img, .guide img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #8d5524; /* Borde debajo de las imágenes */
+}
+
