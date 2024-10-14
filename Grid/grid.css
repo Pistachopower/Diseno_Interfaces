@@ -1,0 +1,20 @@
+.contenedor {
+    /*primera propiedad para trabajar grid*/
+    display: grid;
+
+    /*indicamos cuantas filas y  columnas queremos*/
+
+    /*se especifica el tamaño que vamos a tener de cada columna
+    grid-template-columns:  100px 100px 100px ;
+
+    0fr: hace que las columnas abarcen el tamaño que queremos
+    */
+    grid-template-columns:  1fr 2fr 1fr;
+
+    /*se aplica el tamaño de las filas */
+    grid-template-rows: 150px 300px;
+
+    /*coloca espaciado entre filas y columnas de 20px*/
+    grid-gap:20px;
+
+}

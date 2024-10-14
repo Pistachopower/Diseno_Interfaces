@@ -1,0 +1,15 @@
+ .contenedor {
+    display: grid; 
+    grid-gap: 20px;  /*coloca espaciado entre filas y columnas de 20px*/
+    
+    /*
+    minmax(minimo, max)
+    
+    */
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+
+    /*se deja el segundo parametro para que lo ajuste 
+    y no se salga el texto de la caja*/
+    grid-template-rows: minmax(150px, auto) 400px;
+
+}

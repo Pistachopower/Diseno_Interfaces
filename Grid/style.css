@@ -1,0 +1,42 @@
+/*aplicara para todos los elementos de la pagina*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #eeeeee;
+    /*todos los elemenntos tendrán este estilo*/
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+div p {
+    font-size: 50px;
+    /*tamaño, texto centrar y lo de adentro con 
+    estos estilos*/
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contenedor {
+    /*la clase contenedor va a tener solamente estos estilos*/
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid #000;
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+    /*pone todo el texto centrado*/
+}
+
+/*accede al contenedor y a los div que están adentro*/
+.contenedor > div {
+    display: block; /*abarca todo el espacio disponible*/
+    padding: 20px;
+    color: #fff;
+    background-color: #2f89fc;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,.25) ; /*se refiere a la sombra*/
+}

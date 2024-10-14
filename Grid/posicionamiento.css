@@ -1,0 +1,38 @@
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+
+/*accedemos al hijo de contenedor*/
+.contenedor .item{
+    background: #ff8000;
+
+    /*indica el espacio de las columnas que quiero abarcar (mirar en barra de herramientas)*/
+    /*
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    */
+
+    /*atajo lo mismo de arriba
+      grid-column: 1/4;
+    grid-row: 1/3;
+    */
+  
+    /*Span: lo que hace es que span te rellena en cuadros lo que tu le digas
+    seguido de span
+     grid-column: 1 /span 4;
+    
+    */
+    grid-column: span 3;
+    grid-row: span 3;
+
+
+}
