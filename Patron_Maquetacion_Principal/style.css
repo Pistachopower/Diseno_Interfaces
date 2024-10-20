@@ -45,7 +45,7 @@ body {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 10px 20px;
-    background-color: #000; /* Fondo negro */
+    background-color: #333333; /* Fondo negro */
     color: #fff; /* Color de texto blanco */
 }
 
@@ -86,14 +86,121 @@ body {
     gap: 15px;
 }
 
+/*has cambiado esto*/
 .icons .icon {
     color: #ffd700;
-    font-size: 1.5em;
+    font-size: auto;
     transition: color 0.3s;
 }
 
 .icons .icon:hover {
     color: #7b7d71;
+}
+
+/* Pie de Página */
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra el menú */
+    align-items: center;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    padding: 0 20px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 8px; /* Espacio entre los enlaces */
+    margin: 0;
+}
+
+.footer-menu a {
+    font-size: 12px;
+    padding: 4px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: #ffd700;
+}
+
+.social-icons {
+    position: absolute;
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    display: flex;
+    gap: 15px; /* Espacio entre los íconos */
+}
+
+.social-icons a {
+    color: white;
+    font-size: auto;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+
+  
+/*se usa para evitar desbordamiento*/
+  .div-padre .div-hijo1, .div-padre .div-hijo2, .div-padre .div-hijo3 {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: auto;
+    overflow: hidden; /* Esto evitará el desbordamiento */
+    box-sizing: border-box; /* Para que el padding se incluya en el ancho del div */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en columna */
+        justify-content: center;
+        align-items: center; /* Centra tanto el menú como los íconos de redes sociales */
+        padding: 20px;
+        height: auto;
+    }
+
+    .footer-menu ul {
+        display: flex;
+        flex-direction: column; /* Cambia la orientación del menú a columna */
+        align-items: center; /* Centra los enlaces */
+        gap: 10px; /* Espacio entre los enlaces */
+        margin-bottom: 15px; /* Añade espacio entre el menú y los íconos de redes sociales */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Centra los íconos de redes sociales */
+        gap: 15px; /* Añade espacio entre los íconos */
+    }
+
+    
 }
 
 
