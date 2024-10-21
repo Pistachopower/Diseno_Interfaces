@@ -1,0 +1,22 @@
+.div-padre {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.div-hijo1 {
+    grid-area: header;
+}
+
+.div-hijo2 {
+    grid-area: main;
+    overflow: hidden; /* Esto evitará el desbordamiento */
+}
+
+.div-hijo3 {
+    grid-area: footer;
+}

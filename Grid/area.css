@@ -55,3 +55,13 @@ https://www.youtube.com/watch?v=GUXYOsbKYoY&list=PLhSj3UTs2_yWsFd43wpLog5HUFzDgI
     background: #ff8000;
     grid-area: widgets;
 }
+
+.contenedor .sidebar-2 {
+    background: #393e46;
+    grid-area: sidebar-2;
+}
+
+.contenedor .footer {
+    background: #222831;
+    grid-area: footer;
+}

@@ -1,0 +1,187 @@
+
+
+.div-padre{
+    background-color:antiquewhite;
+    border: 2px solid black;
+    padding: 10px;
+    
+    
+}
+
+.div-padre .div-hijo1{
+
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px; /*darle separacion al div*/
+   /* box-shadow: 2px 2px 10px rgba(0,0,0,.25); /*para la sombra de los contenedores*/
+
+}
+
+.div-padre .div-hijo2{
+
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.div-padre .div-hijo3{
+
+    border: 2px solid black;
+    padding: 10px;
+    
+}
+
+
+/*nav*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333333; /* Fondo negro */
+    color: #fff; /* Color de texto blanco */
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .menu li {
+    display: inline;
+}
+
+.nav .menu a {
+    text-decoration: none;
+    color: #ffd700; /* Color dorado */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav .menu a:hover {
+    background-color: #ffd700;
+    color: #000; /* Fondo negro para contraste */
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons .icon {
+    color: #ffd700;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.icons .icon:hover {
+    color: #7b7d71;
+}
+
+/* Pie de Página */
+.footer {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100px; /* Ajusta la altura del footer */
+    background-color: #333;
+    color: white;
+  }
+  
+  .footer-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 8px; /* Espacio entre los enlaces del menú */
+  }
+  
+  .footer-menu a {
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    padding: 4px 8px; /* Reducción del padding */
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-menu a:hover {
+    color: #ffd700;
+  }
+  
+/*se usa para evitar desbordamiento*/
+  .div-padre .div-hijo1, .div-padre .div-hijo2, .div-padre .div-hijo3 {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: auto;
+    overflow: hidden; /* Esto evitará el desbordamiento */
+    box-sizing: border-box; /* Para que el padding se incluya en el ancho del div */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100px; /* Ajusta la altura del footer */
+        background-color: #333;
+        color: white;
+      }
+      
+      .footer-menu ul {
+        list-style: none;
+        display: flex;
+        gap: 8px; /* Espacio entre los enlaces del menú */
+      }
+      
+      .footer-menu a {
+        font-size: 12px; /* Tamaño de fuente más pequeño */
+        padding: 4px 8px; /* Reducción del padding */
+        color: white;
+        text-decoration: none;
+      }
+      
+      .footer-menu a:hover {
+        color: #aaa;
+      }
+
+      .footer-menu a:hover {
+        color: #ffd700;
+      }
+}
+
+
+
