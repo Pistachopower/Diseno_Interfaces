@@ -17,7 +17,63 @@
     overflow: hidden; /* Esto evitará el desbordamiento */
 }
 
+
 .div-hijo3 {
     grid-area: footer;
 }
+
+/*main*/
+/* Layout con Grid */
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "left-column right-column"
+        "left-column right-column"
+        "navigation navigation";
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.left-column {
+    grid-area: left-column;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+}
+
+.right-column {
+    grid-area: right-column;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+}
+/*botones de abajo*/
+.navigation {
+    grid-area: navigation;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box, .inner-box, .nav-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 70px;
+    text-align: center;
+}
+
+/* Espaciado entre elementos */
+.box {
+    margin-bottom: 20px;
+}
+
+.inner-box {
+    margin: 10px 0;
+}
+
+.nav-box {
+    width: 48%;
+}
+
 
