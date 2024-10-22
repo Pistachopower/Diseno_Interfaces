@@ -98,17 +98,123 @@ body {
 
 /*donde va el hero*/
 .hero{
+    background-image: url('https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ');
+    background-size: cover; /* Para que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    
     border: 2px solid black;
-    padding: 10px;
+    padding: 100px; /*para la imagen del hero se vea mas grande*/
     margin-bottom: 20px; /*darle separacion al div*/
+    text-align: center; /*para que el texto se vea centrado*/
 }
 
-/* <!-- Sección Tienda -->*/
-.section_tienda{
-    border: 2px solid black;
-    padding: 10px;
-    margin-bottom: 20px; /*darle separacion al div*/
+/*buttons call to action*/
+.buttons{
+    display: flex;
+    gap: 20px; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 20px;
 }
+
+/* Estilos generales de los botones */
+.cta {
+    padding: 15px 30px;
+    background-color: #ffdc17; /* Color principal CTA */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Bordes redondeados */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar relieve */
+}
+
+/*aplica color cuando colocas el click*/
+.cta:hover {
+    background-color: #ffd900c8; /* Color más oscuro al pasar el mouse */
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+    transform: translateY(-3px); /* Pequeño efecto de elevar el botón */
+}
+
+.cta:active {
+    transform: translateY(0); /* Devuelve el botón a su posición al hacer clic */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Sombra reducida en clic */
+}
+
+/* Botón secundario */
+.cta.cta-secondary {
+    background-color: #ffdc17;; /* Color secundario más claro */
+    color: #333;
+}
+
+.cta.cta-secondary:hover {
+    background-color: #ffd900c8; /* Color más oscuro al pasar el mouse */
+}
+
+/*fin  buttons call to action*/
+
+
+/* <!-- Sección Tienda -->*/
+/* Estilos generales */
+.services-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Grid de servicios */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Elementos individuales del servicio */
+.service-item {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icono o imagen del servicio */
+.service-icon img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Título del servicio */
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Descripción del servicio */
+.service-item p {
+    font-size: 1em;
+    color: #666;
+}
+/* <!--Fin Sección Tienda -->*/
 
 /*<!-- Sección Blog -->*/
 .section_blog{
