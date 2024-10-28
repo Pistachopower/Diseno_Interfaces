@@ -166,147 +166,173 @@ body {
 /*fin  buttons call to action*/
 
 
-/* <!-- Sección Tienda -->*/
-/* Estilos generales */
-.services-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
 
-.services-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #333;
-}
 
-/* Grid de servicios */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-}
+/*<!-- Sección Tienda, Blog, guias especiales -->*/
 
-/* Elementos individuales del servicio
-Recuerda que son las tarjetas
-*/
-.service-item1 {
-    /*background-color: white;*/
-    background-image: url('https://s.yimg.com/ny/api/res/1.2/UJWTYVphf2dPAuinvRLy6Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTIwNDg7aD0xMTUyO2NmPXdlYnA-/https://media.zenfs.com/es/bbc_news_mundo_254/c7f1de09a5f8a7b55b6b35827014f3d6');
+
+.popular-destinations {
     padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    width: 100%;
-    max-width: 300px;
 }
 
-.service-item2 {
-    /*background-color: white;*/
-    background-image: url('https://www.caminantesdeaguere.com/wp-content/uploads/2023/02/senor-anillos-scaled-1.jpg');
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-}
-
-.service-item3 {
-    /*background-color: white;*/
-    background-image: url('https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2022/09/01/fotografia-glenorchy-1.jpeg');
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-}
-
-.service-item4 {
-    /*background-color: white;*/
-    background-image: url('https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2022/09/01/fotografia-glenorchy-1.jpeg');
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-}
-
-.service-item1:hover,
-.service-item2:hover,
-.service-item3:hover,
-.service-item4:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Icono o imagen del servicio */
-.service-icon img {
-    width: 80px;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-/* Título del servicio */
-.service-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-/* Descripción del servicio */
-.service-item p {
-    font-size: 1em;
-    color: #666;
-}
-/* <!--Fin Sección Tienda -->*/
-
-/*<!-- Sección Blog -->*/
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 10px; /* Espacio entre los items */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .grid-item {
-    background-color: lightblue; /* Color de fondo para visibilidad */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alinear el texto al centro */
-    height: 100px; /* Altura fija para todos los items */
+    background-color: #f5f5f5;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.grid-item p {
+    font-size: 1em;
+    color: #555;
 }
 
 
-/*<!-- Sección Blog fin-->*/
-
-
-
-/*<!-- Sección Guías Especiales -->*/
-.section_guias{
-    border: 2px solid black;
-    padding: 10px;
-    margin-bottom: 20px; /*darle separacion al div*/
+.grid-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/*Sección de Contacto*/
-.section_contacto{
-    border: 2px solid black;
-    padding: 10px;
-    margin-bottom: 20px; /*darle separacion al div*/
+.grid-item button:hover {
+    background-color: #004b99;
 }
 
 
+.popular-destinations {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #d8d3d3;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.grid-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.grid-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.grid-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.grid-item button:hover {
+    background-color: #004b99;
+}
+
+
+/*<!-- Sección Tienda, Blog, guias especiales fin-->*/
+
+
+
+
+
+/*section_contacto*/
+.w3-padding-64 {
+    padding: 64px 16px;
+  }
+  
+  .w3-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .w3-text-grey {
+    color: grey;
+  }
+  
+  .w3-text-light-grey {
+    color: lightgrey;
+  }
+  
+  .w3-opacity {
+    opacity: 0.5;
+  }
+  
+  .w3-section {
+    margin: 16px 0;
+  }
+  
+  .w3-input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .w3-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+  }
+  
+  .w3-button:hover {
+    background-color: #ddd;
+  }
+  
+/*section_contacto fin*/
 
 /* Pie de Página */
 .footer {
