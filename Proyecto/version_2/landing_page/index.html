@@ -7,20 +7,24 @@
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--carga el carousel-->
     <!-- Cargar Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
+
     <!--padre-->
     <div class="div-padre">
+
 
         <!--header-->
         <div class="div-hijo1">
             <header class="header">
                 <div class="logo">
-                    <img src="https://picsum.photos/seed/picsum/200/300" alt="Logo">
+                    <img src="imagenes/logo_Middle-Earth travel-agency logo.jpeg" alt="Logo">
                 </div>
                 <nav class="nav">
                     <ul class="menu">
@@ -37,17 +41,122 @@
                 </div>
             </header>
 
+            <!--carousel-->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <!--carousel-->
+                    <div class="container-fluid"> <!-- Cambiado a container-fluid para cubrir todo el ancho -->
+                        <br>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicadores del carrusel -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Contenedor para las diapositivas -->
+                            <div class="carousel-inner">
+                                <!-- Primera diapositiva -->
+                                <div class="item active">
+                                    <img src="imagenes/imag1_carousel.jpg" alt="Rivendell">
+                                    <div class="carousel-caption">
+                                        <h1><b>Rivendell</b></h1>
+                                        <h3>El mejor lugar</h3>
+                                    </div>
+                                </div>
+
+                                <!-- Segunda diapositiva -->
+                                <div class="item">
+                                    <img src="imagenes/imag2_carousel.jpg" alt="Moria">
+                                    <div class="carousel-caption">
+                                        <h1><b>Moria</b></h1>
+                                        <h3>Contacto con el alma</h3>
+                                    </div>
+                                </div>
+
+                                <!-- Tercera diapositiva -->
+                                <div class="item">
+                                    <img src="imagenes/hero.jpg" alt="Mordor">
+                                    <div class="carousel-caption">
+                                        <h1><b>Mordor</b></h1>
+                                        <h3>Pronto del alma</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controles para navegar entre las diapositivas -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                    <!--carousel fin-->
+
+
+                </div>
+            </div>
+            <!--fin carousel-->
+
         </div>
         <!--fin header-->
 
 
         <!--main-->
+
         <div class="div-hijo2">
+            <!-- Sección Tienda -->
+            <section class="tienda">
+                <div class="textoPrincipalTienda">
+                    <h2><b>Nuestros viajes</b></h2>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="imagenes/img1_tienda.jpg" alt="Rivendell">
+                        <div class="card-content">
+                            <h3>Rivendell</h3>
+                            <p>Detalles del viaje a Rivendell.</p>
+                            <button>Leer más</button>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <img src="imagenes/imag2_tienda.jpg" alt="Minas Tirith">
+                        <div class="card-content">
+                            <h3>Minas Tirith</h3>
+                            <p>Detalles del viaje a Minas Tirith.</p>
+                            <button>Leer más</button>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="imagenes/imag3_tienda.jpg" alt="Isengard">
+                        <div class="card-content">
+                            <h3>Isengard</h3>
+                            <p>Detalles del viaje a Isengard.</p>
+                            <button>Leer más</button>
+                        </div>
+                    </div>
+                    <!-- Add more destinations as needed -->
+                </div>
+            </section>
+            <!--fin  Sección Tienda -->
+
+
+            <!--Destinos populares-->
             <!-- Sección  hero banner-->
-            <div class="hero">
-                <h1>Rivendell Moria Mordor</h1>
-                <h2>Journeys Through Middle-Earth</h2>
-                <p>Explora los destinos más icónicos de Middle-Earth.</p>
+            <div class="destinosPopulares">
+                <h1><b>Destinos populares</b></h1>
+                <h2><b>Mordor</b></h2>
+                <p><b>El mejor destino para invierno.</b></p>
 
 
                 <div class="buttons">
@@ -56,138 +165,120 @@
                     <button class="cta cta-secondary">Explorar paquete</button>
                 </div>
             </div>
+            <!--Destinos populares-->
 
 
-            <!-- Sección Tienda -->
-            <section class="popular-destinations">
-                <h2>Tienda</h2>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <img src="hero.jpg" alt="Rivendell">
-                        <div class="card-content">
-                            <h3>Rivendell</h3>
-                            <p>Description and details about Rivendell.</p>
-                            <button>Learn More</button>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="hero.jpg" alt="Minas Tirith">
-                        <div class="card-content">
-                            <h3>Minas Tirith</h3>
-                            <p>Description and details about Minas Tirith.</p>
-                            <button>Learn More</button>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="hero.jpg" alt="Isengard">
-                        <div class="card-content">
-                            <h3>Isengard</h3>
-                            <p>Description and details about Isengard.</p>
-                            <button>Learn More</button>
-                        </div>
-                    </div>
-                    <!-- Add more destinations as needed -->
+            <!--Testimonios-->
+            <section class="testimonios">
+                <div class="textoPrincipaltestimonios">
+                    <h2><b>Testimonios</b></h2>
                 </div>
-            </section>
-            <!--fin  Sección Tienda -->
 
-            <!-- Sección Blog -->
-            <section class="popular-destinations">
-                <h2>Blog</h2>
                 <div class="grid-container">
                     <div class="grid-item">
-                        <img src="hero.jpg" alt="Rivendell">
+                        <img src="imagenes/avatar1.jpeg" alt="avatar1">
                         <div class="card-content">
-                            <h3>Rivendell</h3>
-                            <p>Description and details about Rivendell.</p>
-                            <button>Learn More</button>
+                            
+                            <h3><b>Lin You</b></h3>
+                            <p>"Excelentes destinos. Sin duda, lo volvería a repetir".</p>
+                            
                         </div>
                     </div>
-                    <div class="grid-item">
-                        <img src="hero.jpg" alt="Minas Tirith">
-                        <div class="card-content">
-                            <h3>Minas Tirith</h3>
-                            <p>Description and details about Minas Tirith.</p>
-                            <button>Learn More</button>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="hero.jpg" alt="Isengard">
-                        <div class="card-content">
-                            <h3>Isengard</h3>
-                            <p>Description and details about Isengard.</p>
-                            <button>Learn More</button>
-                        </div>
-                    </div>
-                    <!-- Add more destinations as needed -->
-                </div>
-            </section>
-            <!-- Fin Sección Blog -->
 
-
-            <!-- Sección Guías Especiales -->
-            <section class="popular-destinations">
-                <h2>Guias especiales</h2>
-                <div class="grid-container">
                     <div class="grid-item">
-                        <img src="hero.jpg" alt="Rivendell">
+                        <img src="imagenes/avatar2.jpeg" alt="Sasha Gem">
                         <div class="card-content">
-                            <h3>Rivendell</h3>
-                            <p>Description and details about Rivendell.</p>
-                            <button>Learn More</button>
+                            <h3><b>Sasha Gem</b></h3>
+                            <p>"Me encantó lo mágico del destino. Me enamoré del lugar".</p>
+                           
                         </div>
                     </div>
                     <div class="grid-item">
-                        <img src="hero.jpg" alt="Minas Tirith">
+                        <img src="imagenes/avatar3.jpeg" alt="Pepelu Marx">
                         <div class="card-content">
-                            <h3>Minas Tirith</h3>
-                            <p>Description and details about Minas Tirith.</p>
-                            <button>Learn More</button>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="hero.jpg" alt="Isengard">
-                        <div class="card-content">
-                            <h3>Isengard</h3>
-                            <p>Description and details about Isengard.</p>
-                            <button>Learn More</button>
+                            <h3><b>Pepelu Marx</b></h3>
+                            <p>"Buenísimo tío. Definitivamente una aventura increible. Es necesario repetirlo".</p>
+                        
                         </div>
                     </div>
 
                     <!-- Add more destinations as needed -->
                 </div>
             </section>
-            <!--Fin Sección Guías Especiales -->
+            <!--Testimonios-->
+
+            <!--/*Sección Guías Especiales*/-->
+            <section class="guiasEspeciales">
+                <div class="textoPrincipalguiasEspeciales">
+                    <h2><b>Guías Especiales</b></h2>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="imagenes/realistic image of Gandalf.jpeg" alt="gandalf">
+                        <div class="card-content">
+                            
+                            <h3><b>Gandalf | Experto en regiones montañosas</b></h3>
+                            <p>Biografía: Gandalf es conocido por su vasta sabiduría y experiencia en las montañas.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <img src="imagenes/realistic image of Arwen.jpeg" alt="Arwen">
+                        <div class="card-content">
+                            <h3><b>Arwen | Guardiana de los valles</b></h3>
+                            <p>Biografía: Arwen es conocida por su gracia y sabiduría.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="imagenes/realistic image of Legolas.jpeg" alt="Legolas">
+                        <div class="card-content">
+                            <h3><b>Legolas | Especialista en bosques</b></h3>
+                            <p>Biografía: Legolas, el elfo con aguda visión y habilidades de arquero, conoce cada
+                                sendero oculto en los bosques de la Tierra Media.</p>
+                        
+                        </div>
+                    </div>
+
+                    <!-- Add more destinations as needed -->
+                </div>
+            </section>
+            <!--/*Sección Guías Especiales*/-->
+
 
             <!-- Sección de Contacto -->
-            <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-                <h2 class="w3-text-light-grey">Contáctame</h2>
+            <div class="w3-padding-64 w3-content w3-text-grey" >
+                <h2 class="w3-text-light-grey">Contácta con nosotros</h2>
                 <hr class="w3-opacity">
-              
+
                 <div class="w3-section">
-                  <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Comarca, Tierra Media</p>
-                  <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Teléfono: +00 123456</p>
-                  <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: frodo@shire.com</p>
+                    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Comarca, Tierra
+                        Media</p>
+                    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Teléfono: +00 123456
+                    </p>
+                    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email:
+                        frodo@shire.com</p>
                 </div><br>
-                
+
                 <p>¡Pongámonos en contacto! Envíame un mensaje:</p>
-              
-                <form action="/action_page.php" target="_blank">
-                  <p><input class="w3-input" type="text" placeholder="Nombre" required name="Name"></p>
-                  <p><input class="w3-input" type="text" placeholder="Email" required name="Email"></p>
-                  <p><input class="w3-input" type="text" placeholder="Asunto" required name="Subject"></p>
-                  <p><input class="w3-input" type="text" placeholder="Mensaje" required name="Message"></p>
-                  <p>
-                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-                      <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
-                    </button>
-                  </p>
+
+                <form  target="_blank">
+                    <p><input class="w3-input" type="text" placeholder="Nombre" required name="Name"></p>
+                    <p><input class="w3-input" type="text" placeholder="Email" required name="Email"></p>
+                    <p><input class="w3-input" type="text" placeholder="Asunto" required name="Subject"></p>
+                    <p><input class="w3-input" type="text" placeholder="Mensaje" required name="Message"></p>
+                    <p>
+                        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                            <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+                        </button>
+                    </p>
                 </form>
-              <!-- End Contact Section -->
-              </div>
+                <!-- End Contact Section -->
+            </div>
 
             <!-- Fin Sección de Contacto -->
-
 
 
             <!--footer-->
@@ -213,8 +304,15 @@
 
             </div>
             <!--fin footer-->
+
+            <!--fin main-->
         </div>
 
+    </div>
+
+
+
+    
 </body>
 
 </html>
