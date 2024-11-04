@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+     <!-- Enlace a Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!--
+    container: contenedor que mantiene centrado el contenido en la pantalla
+    
+    propiedad: mx-auto
+        m(margen)
+        x(ambos lados)- 
+        auto(navegador calcula el margen): 
+        
+        mx-auto= es una funcion
+        aplica margenes en los lados izquierdo y derecho.
+
+        p-5: es una funcion clase que rellena el padding en
+        5 en todos los lados del elemento. 
+    -->
+    <div class="container mx-auto p-5">
+        <header class="flex justify-between items-center py-4">
+            <h1 class="text-3xl font-bold"> Tierra Media</h1>
+            <nav class="space-x-4">
+                <a href="#" class="text-blue-500 hover:underline">Inicio</a>
+                <a href="#" class="text-blue-500 hover:underline">Categorías</a>
+                <a href="#" class="text-blue-500 hover:underline">Sobre Nosotros</a>
+                <a href="#" class="text-blue-500 hover:underline">Contacto</a>
+            </nav>
+        </header>
+
+        <div class="bg-cover h-64" style="background-image: url('imagen-destacada.jpg');">
+            <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center">
+                <h2 class="text-white text-4xl">Título del Blog</h2>
+                <p class="text-white">Descripción breve del blog.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="imagen-articulo.jpg" alt="Artículo" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold">Título del Artículo</h3>
+                <p class="text-gray-700">Resumen del artículo aquí.</p>
+                <p class="text-sm text-gray-500">Publicado por Autor en Fecha</p>
+                <a href="#" class="text-blue-500 hover:underline">Leer más</a>
+            </div>
+            <!-- Repetir para más artículos -->
+        </div>
+
+        <footer class="mt-10 text-center">
+            <p>Información de contacto y redes sociales</p>
+            <p>&copy; 2024 Mi Blog. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
