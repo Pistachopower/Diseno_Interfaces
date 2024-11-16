@@ -1,44 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página autor</title>
+    <title>Pagina autor</title>
     <!-- Enlace a Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-o6P5L1LllSTeG/2f3KZAl9KjW+I+hReXPiib+hBskS3OygzMGnAukLWxjdniM5Df6/WfaKh5jGQ5q/mT8HTaUg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <div class="container mx-auto p-5">
+    <div class="container mx-auto p-1">
+
         <header class="flex justify-between items-center py-4">
-            <!-- Mismo menú que en la página principal -->
+            <img src="imagenes/logo_Middle-Earth travel-agency logo.jpeg" alt="Logo" class="h-12 w-auto mr-4"> 
+            <!--3xl: tamaño grande-->
+            <nav class="space-x-4">
+                <a href="#" class="text-black hover:underline">Inicio</a>
+                <a href="#" class="text-black hover:underline">Categorías</a>
+                <a href="#" class="text-black hover:underline">Sobre Nosotros</a>
+                <a href="#" class="text-black hover:underline">Contacto</a>
+            </nav>
         </header>
+
+        <div class="container mx-auto p-6">
+            <!-- Header -->
+            <header class="text-center mb-8">
+                <h1 class="text-4xl font-bold">Meet Bilbo Baggins</h1>
+                <p class="text-gray-600 mt-2">The Adventurer from Middle-Earth</p>
+            </header>
     
-        <section class="text-center mt-5">
-            <h2 class="text-3xl font-bold">Sobre el Autor</h2>
-            <img src="bilbo-baggins.jpg" alt="Bilbo Baggins" class="mx-auto w-32 h-32 rounded-full mt-4">
-            <p class="mt-2">Bilbo Baggins, nacido en Rivendel...</p>
-            <p class="mt-4">Intereses: Explorar ruinas antiguas, leyendas de la Tierra Media...</p>
-            <p class="mt-4"><strong>Cita inspiradora:</strong> "La aventura es solo un sueño para quienes se atreven a soñar."</p>
-            <div class="mt-4">
-                <a href="#" class="text-blue-500 hover:underline">Instagram</a>
-                <a href="#" class="text-blue-500 hover:underline">Twitter</a>
-                <a href="#" class="text-blue-500 hover:underline">Facebook</a>
+            <!-- Author Image and Description -->
+            <div class="flex flex-col md:flex-row items-center bg-white shadow-md rounded-lg p-6 mb-8">
+                <img src="imagenes/avatar1.jpeg" alt="Bilbo Baggins" class="w-48 h-48 rounded-full mx-auto md:mx-0 md:mr-6">
+                <div class="mt-4 md:mt-0">
+                    <p class="text-lg text-gray-700">
+                        **Bilbo Baggins** was born in the Shire, a peaceful land in Middle-Earth. Known for his unexpected journey with Thorin and Company, Bilbo's adventures have become legendary. Passionate about exploring ancient ruins and uncovering the legends of Middle-Earth, Bilbo shares his stories with followers eager to learn about his travels.
+                    </p>
+                </div>
             </div>
-        </section>
     
-        <section class="mt-5">
-            <h3 class="text-xl font-semibold">Logros Notables</h3>
-            <ul class="list-disc ml-5">
-                <li>Libros publicados sobre la Tierra Media.</li>
-                <li>Participación en conferencias.</li>
-                <li>Premios recibidos.</li>
-            </ul>
-        </section>
+            <!-- Social Media Links -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+                <h2 class="text-2xl font-semibold mb-4">Connect with Bilbo</h2>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-500 hover:text-blue-700">Instagram</a>
+                    <a href="#" class="text-blue-500 hover:text-blue-700">Twitter</a>
+                    <a href="#" class="text-blue-500 hover:text-blue-700">Facebook</a>
+                    <a href="#" class="text-blue-500 hover:text-blue-700">YouTube</a>
+                    <a href="#" class="text-blue-500 hover:text-blue-700">Contact</a>
+                </div>
+            </div>
     
-        <footer class="mt-10 text-center">
-            <!-- Mismo pie de página que en la página principal -->
+            <!-- Achievements -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+                <h2 class="text-2xl font-semibold mb-4">Notable Achievements</h2>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Author of "There and Back Again: A Hobbit's Tale"</li>
+                    <li>Speaker at the Middle-Earth Adventure Conference</li>
+                    <li>Recipient of the Shire's Most Adventurous Hobbit Award</li>
+                </ul>
+            </div>
+    
+            <!-- Inspirational Quote -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+                <blockquote class="italic text-gray-600">"Adventure is just a dream away for those who dare to dream."</blockquote>
+            </div>
+    
+            <!-- Popular Articles -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4">Popular Articles by Bilbo</h2>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li><a href="#" class="text-blue-500 hover:underline">Exploring the Mines of Moria</a></li>
+                    <li><a href="#" class="text-blue-500 hover:underline">The Secrets of Rivendell</a></li>
+                    <li><a href="#" class="text-blue-500 hover:underline">A Journey Through the Misty Mountains</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="bg-gray-900 text-white py-8 mt-10 text-center">
+            <div class="container mx-auto px-6">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold">Síguenos</h2>
+                    <div class="flex justify-center space-x-6 mt-2">
+                        <a href="#" class="text-white hover:text-blue-400 flex items-center space-x-1">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="text-white hover:text-blue-400 flex items-center space-x-1">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="text-white hover:text-pink-500 flex items-center space-x-1">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-8 border-t border-gray-700 pt-4">
+                    <p class="text-gray-500 text-sm">&copy; 2024 Mi Blog. Todos los derechos reservados.</p>
+                </div>
+            </div>
         </footer>
-    </div>
-    
+
+
+
 </body>
+
 </html>

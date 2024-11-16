@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,104 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
+
 <body>
-    <div class="container mx-auto p-5">
+    <div class="container mx-auto p-1">
+
         <header class="flex justify-between items-center py-4">
-            <!-- Mismo menú que en la página principal -->
+            <img src="imagenes/logo_Middle-Earth travel-agency logo.jpeg" alt="Logo" class="h-12 w-auto mr-4"> 
+            <!--3xl: tamaño grande-->
+            
+            <nav class="space-x-4">
+                <a href="#" class="text-black hover:underline">Inicio</a>
+                <a href="#" class="text-black hover:underline">Categorías</a>
+                <a href="#" class="text-black hover:underline">Sobre Nosotros</a>
+                <a href="#" class="text-black hover:underline">Contacto</a>
+            </nav>
         </header>
-    
-        <article class="mt-5">
-            <h2 class="text-3xl font-bold">Título del Artículo</h2>
-            <p class="text-gray-500">Publicado por Autor en Fecha - Categoría</p>
-            <img src="imagen-articulo.jpg" alt="Artículo" class="w-full h-64 object-cover mt-4">
-            <p class="mt-4">Texto completo del artículo...</p>
-            <!-- Más contenido -->
-        </article>
-    
-        <section class="mt-5">
-            <h3 class="text-xl font-semibold">Comentarios</h3>
-            <form class="mt-2">
-                <textarea class="w-full border p-2" placeholder="Deja tu comentario..."></textarea>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 mt-2">Enviar</button>
-            </form>
-            <ul class="mt-4">
-                <li class="border-b py-2">Comentario 1</li>
-                <li class="border-b py-2">Comentario 2</li>
-            </ul>
-        </section>
-    
-        <footer class="mt-10 text-center">
-            <!-- Mismo pie de página que en la página principal -->
+
+        <!-- Plantilla de articulo -->
+
+        <div class="container mx-auto p-5">
+            <header class="flex justify-between items-center py-4">
+                <!-- Mismo menú que en la página principal -->
+            </header>
+
+            <article class="mt-5">
+                <h2 class="text-3xl font-bold">La Comarca: El Hogar de los Hobbits</h2>
+                <p class="text-gray-500">Publicado por Autor en Fecha - Categoría</p>
+                <img src="imagenes/hero.jpg" alt="Artículo" class="w-full h-64 object-cover mt-4">
+                <p class="mt-4">
+                    La Comarca es uno de los lugares más emblemáticos y queridos de "El Señor de los Anillos". Este idílico territorio es el hogar de los hobbits, una raza pequeña y pacífica que disfruta de una vida sencilla, centrada en la agricultura, la comida y la comunidad. La Comarca se encuentra en el noroeste de la Tierra Media y está caracterizada por sus verdes colinas, campos de cultivo y acogedoras casas subterráneas, conocidas como hobbit-holes.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-6">Características de La Comarca</h3>
+
+                <ul class="list-disc list-inside mt-2">
+                    <li><strong>Hobbiton:</strong> Es la aldea más famosa de la Comarca, donde vive Frodo Bolsón. Aquí se encuentra la icónica casa de Bilbo y Frodo, conocida como La Madriguera. Hobbiton es conocido por sus paisajes pintorescos y su ambiente tranquilo.</li>
+                    <li><strong>La Tierra de los Hobbits:</strong> Este lugar es famoso por sus festividades, como los cumpleaños y las celebraciones de la cosecha. Los hobbits son conocidos por su amor por la comida y la bebida, disfrutando de banquetes y fiestas en comunidad.</li>
+                    <li><strong>El Bosque de la Comarca:</strong> Aunque la Comarca es principalmente rural, también cuenta con áreas boscosas que ofrecen un refugio natural para sus habitantes. Estos bosques son lugares de tranquilidad y belleza, donde los hobbits pueden disfrutar de la naturaleza.</li>
+                </ul>
+
+                <h3 class="text-2xl font-semibold mt-6">La Comarca en la Historia</h3>
+                <p class="mt-2">
+                    La Comarca juega un papel crucial en la historia de "El Señor de los Anillos". Es desde aquí donde Frodo y sus amigos inician su aventura para destruir el Anillo Único. A pesar de su aparente tranquilidad, la Comarca se ve amenazada por la sombra de Sauron y sus fuerzas oscuras. La partida de Frodo hacia el peligro simboliza la lucha entre la paz de la vida hobbit y el caos del mundo exterior.
+                </p>
+
+                <h3 class="text-2xl font-semibold mt-6">Legado de La Comarca</h3>
+                <p class="mt-2">
+                    La Comarca no solo representa un refugio de paz, sino que también simboliza la resistencia y la valentía de los hobbits. A lo largo de la historia, se demuestra que incluso los más pequeños pueden tener un impacto significativo en el mundo. La Comarca se ha convertido en un símbolo de esperanza y comunidad, resonando con los lectores y espectadores de "El Señor de los Anillos" en todo el mundo.
+                </p>
+
+                <p class="mt-4">
+                    En resumen, La Comarca es un lugar que encapsula la esencia de la vida hobbit: simple, alegre y profundamente conectada con la naturaleza. Su representación en la obra de Tolkien ha dejado una huella duradera en la cultura popular, convirtiéndola en un lugar querido por todos los fans de la Tierra Media.
+                </p>
+                <!-- Más contenido -->
+            </article>
+
+            <section class="mt-5">
+                <h3 class="text-xl font-semibold">Comentarios</h3>
+                <form class="mt-2">
+                    <textarea class="w-full border p-2" placeholder="Deja tu comentario..."></textarea>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 mt-2">Enviar</button>
+                </form>
+                <ul class="mt-4">
+                    <li class="border-b py-2">Comentario 1</li>
+                    <li class="border-b py-2">Comentario 2</li>
+                </ul>
+            </section>
+
+            <footer class="mt-10 text-center">
+                <!-- Mismo pie de página que en la página principal -->
+            </footer>
+        </div>
+
+        <footer class="bg-gray-900 text-white py-8 mt-10 text-center">
+            <div class="container mx-auto px-6">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold">Síguenos</h2>
+                    <div class="flex justify-center space-x-6 mt-2">
+                        <a href="#" class="text-white hover:text-blue-400 flex items-center space-x-1">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="text-white hover:text-blue-400 flex items-center space-x-1">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="text-white hover:text-pink-500 flex items-center space-x-1">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-8 border-t border-gray-700 pt-4">
+                    <p class="text-gray-500 text-sm">&copy; 2024 Mi Blog. Todos los derechos reservados.</p>
+                </div>
+            </div>
         </footer>
-    </div>
-    
+
 </body>
+
 </html>
