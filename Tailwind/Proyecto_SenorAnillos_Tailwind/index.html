@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <!-- Enlace a Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="bg-gray-900 flex flex-wrap items-center justify-between py-4 px-6">
+        <div class="flex items-center mb-4 sm:mb-0">
+            <img src="imagenes/logo_Middle-Earth travel-agency logo.jpeg" alt="Logo" class="h-20 w-auto mr-4">
+        </div>
+        <nav class="w-full sm:w-auto flex flex-wrap justify-center sm:justify-between space-x-4 mb-4 sm:mb-0">
+            <a href="#" class="text-white font-bold hover:underline text-base sm:text-lg">Inicio</a>
+            <a href="#" class="text-white font-bold hover:underline text-base sm:text-lg">Categorías</a>
+            <a href="#" class="text-white font-bold hover:underline text-base sm:text-lg">Sobre Nosotros</a>
+            <a href="#" class="text-white font-bold hover:underline text-base sm:text-lg">Contacto</a>
+        </nav>
+        <form class="flex w-full sm:w-auto items-center">
+            <input type="text" placeholder="Buscar..." class="px-4 py-2 w-full sm:w-auto rounded-l bg-gray-200 focus:outline-none text-base sm:text-lg">
+            <button type="submit" class="bg-yellow-500 text-white font-bold px-4 py-2 rounded-r text-base sm:text-lg">Buscar</button>
+        </form>
+    </header>
+
+
+    <div class="bg-cover h-64 sm:h-80 md:h-96 lg:h-screen" style="background-image: url('imagenes/hero.jpeg');">
+        <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 lg:p-10">
+            <h2 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">La Tierra Media Desvelada:</h2>
+            <p class="text-white text-base sm:text-lg md:text-xl lg:text-2xl text-center mt-4">Explora el mundo y legado de El Señor de los Anillos.</p>
+        </div>
+    </div>
+    
+
+
+    <!--articulos-->
+    <section id="articulos" class="bg-white text-gray-900 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-6 relative py-4">
+                <span class="inline-block bg-yellow-500 text-white px-6 py-2 shadow-lg relative z-10">Artículos Recientes</span>
+                <span class="block w-full h-1 bg-yellow-500 absolute bottom-0 left-0 shadow-lg transform -translate-y-1/2"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+                <div class="bg-white p-4 shadow-lg rounded-lg">
+                    <img src="imagenes/picni.jpeg" alt="Artículo" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold">Aventuras en la Tierra Media: Un Viaje Inolvidable</h3>
+                    <p class="text-gray-700">Descubre los rincones más mágicos de la Tierra Media con "Aventuras en la Tierra Media</p>
+                    <p class="text-sm text-gray-500">Samwise Gamgee | Fecha: 16 de noviembre de 2024</p>
+                    <a href="plantilla_Articulo.html" class="mt-4 bg-yellow-500 text-white font-bold px-4 py-2 rounded inline-block">Leer más</a>
+                </div>
+    
+                <div class="bg-white p-4 shadow-lg rounded-lg">
+                    <img src="imagenes/tierra_Media.jpeg" alt="Artículo" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold">Viajes a la Tierra Media: Explorando los Caminos del Señor de los Anillos</h3>
+                    <p class="text-gray-700">Explora los paisajes emblemáticos de la Tierra Media con "Viajes a la Tierra Media".</p>
+                    <p class="text-sm text-gray-500">Frodo Baggins | Fecha: 15 de noviembre de 2024 </p>
+                    <a href="plantilla_Articulo.html" class="mt-4 bg-yellow-500 text-white font-bold px-4 py-2 rounded inline-block">Leer más</a>
+                </div>
+    
+                <div class="bg-white p-4 shadow-lg rounded-lg">
+                    <img src="imagenes/tierra_Media_2.jpeg" alt="Artículo" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold">Aventuras en la Tierra Media: Un Viaje Inolvidable</h3>
+                    <p class="text-gray-700">Descubre los rincones más mágicos de la Tierra Media con "Aventuras en la Tierra Media</p>
+                    <p class="text-sm text-gray-500">Gandalf el Gris | Fecha: 16 de noviembre de 2024</p>
+                    <a href="plantilla_Articulo.html" class="mt-4 bg-yellow-500 text-white font-bold px-4 py-2 rounded inline-block">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Sección de Etiquetas -->
+<section id="etiquetas" class="p-8 bg-white shadow-lg rounded-lg border border-gray-300 my-8">
+    <h2 class="text-3xl font-bold text-center mb-6 relative py-4">
+        <span class="inline-block bg-yellow-500 text-white px-6 py-2  shadow-lg relative z-10">Etiquetas</span>
+        <span class="block w-full h-1 bg-yellow-500 absolute bottom-0 left-0 shadow-lg transform -translate-y-1/2"></span>
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-center items-center">
+        <span class="bg-yellow-500 text-white font-bold px-4 py-2 rounded-full shadow-md flex items-center justify-center">Hobbits</span>
+        <span class="bg-gray-900 text-white font-bold px-4 py-2 rounded-full shadow-md flex items-center justify-center">Elfos</span>
+        <span class="bg-yellow-500 text-white font-bold px-4 py-2 rounded-full shadow-md flex items-center justify-center">Enanos</span>
+        <span class="bg-gray-900 text-white font-bold px-4 py-2 rounded-full shadow-md flex items-center justify-center">Mordor</span>
+        <span class="bg-gray-900 text-white font-bold px-4 py-2 rounded-full shadow-md flex items-center justify-center">Gondor</span>
+        <span class="bg-yellow-500 text-white font-bold px-4 py-2 rounded-full shadow-md flex items-center justify-center">Rivendel</span>
+        <span class="bg-gray-900 text-white font-bold px-4 py-2 rounded-full shadow-md flex items-center justify-center">Moria</span>
+        <span class="bg-yellow-500 text-white font-bold px-4 py-2 rounded-full shadow-md flex items-center justify-center">Fangorn</span>
+    </div>
+</section>
+
+
+
+    <!--informacion de contacto-->
+    <section id="contacto" class="bg-white text-gray-900 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-6 relative py-4">
+                <span class="inline-block bg-yellow-500 text-white px-6 py-2 shadow-lg relative z-10">Información de Contacto</span>
+                <span class="block w-full h-1 bg-yellow-500 absolute bottom-0 left-0 shadow-lg transform -translate-y-1/2"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-white">Dirección</h3>
+                    <p class="mt-4 text-white">123 Calle Falsa,</p>
+                    <p class="text-white">Sevilla, Andalucía, España</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-white">Teléfono</h3>
+                    <p class="mt-4 text-white">+34 123 456 789</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-white">Correo Electrónico</h3>
+                    <p class="mt-4 text-white">contacto@tierra-media-agencia.com</p>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <form class="w-full md:w-1/2 bg-gray-900 p-6 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold mb-2" for="nombre">Nombre</label>
+                        <input class="w-full px-3 py-2 text-gray-800 rounded" type="text" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold mb-2" for="email">Correo Electrónico</label>
+                        <input class="w-full px-3 py-2 text-gray-800 rounded" type="email" id="email" placeholder="Tu correo electrónico">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-semibold mb-2" for="mensaje">Mensaje</label>
+                        <textarea class="w-full px-3 py-2 text-gray-800 rounded" id="mensaje" rows="4" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <button class="w-full mt-4 bg-yellow-500 text-white px-4 py-2 rounded">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!--informacion de contacto fin-->
+
+
+
+    <footer class="bg-gray-900 text-white py-8 mt-10 text-center">
+        <div class="container mx-auto px-6">
+            <div class="mb-6">
+                <h2 class="text-3xl font-bold">Síguenos</h2>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-white hover:text-blue-400">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-400">
+                        <i class="fab fa-x fa-2x"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-pink-500">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-red-600">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 border-t border-gray-700 pt-4">
+                <p class="text-gray-500 text-base">&copy; 2024 La Tierra Media. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
