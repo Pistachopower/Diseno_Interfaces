@@ -5,14 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- Archivo CSS personalizado -->
-  <link rel="stylesheet" href="style.css">
+
 
   <!-- CDN de Bootstrap 5.3 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Enlace a Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="imagenes/logo_Middle-Earth travel-agency logo.jpeg" alt="Store Logo" style="height: 70px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5 px-3" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5 px-3" href="#">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5 px-3" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5 px-3" href="#">Mi cuenta</a>
+            </li>
+          </ul>
+          <form class="d-flex me-3">
+            <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search">
+            <button class="btn btn-warning" type="submit">Buscar</button>
+          </form>
+          <a href="#" class="btn btn-outline-light position-relative">
+            <i class="fas fa-shopping-cart fa-lg"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+
   <main class="container my-5">
     <div class="row">
       <div class="col-md-6">
@@ -37,6 +77,20 @@
       </ul>
     </div>
   </main>
+
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <h4 class="fw-bold">Síguenos</h4>
+      <div class="d-flex justify-content-center mt-3">
+        <a href="#" class="text-white mx-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+        <a href="#" class="text-white mx-3"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-white mx-3"><i class="fab fa-youtube fa-lg"></i></a>
+      </div>
+      <hr class="border-light my-3">
+      <p class="text-muted small mb-0">&copy; 2024 La Tierra Media. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
 </body>
 
