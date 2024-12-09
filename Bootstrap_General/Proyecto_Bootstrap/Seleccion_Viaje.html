@@ -4,15 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viajes de la Tierra Media</title>
+  <title>Selección de los viajes</title>
 
-  <!-- CDN de Bootstrap 5.3 -->
+  <!-- Bootstrap 5.3 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Enlace a Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -28,23 +24,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5 px-3" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5 px-3" href="#">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5 px-3" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fs-5 px-3" href="#">Mi cuenta</a>
-            </li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 px-3" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 px-3" href="#">Tienda</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 px-3" href="#">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 px-3" href="#">Mi cuenta</a></li>
           </ul>
-          <form class="d-flex me-3">
-            <input class="form-control me-2" type="search" placeholder="Buscar aventuras..." aria-label="Buscar">
-            <button class="btn btn-warning" type="submit">Buscar</button>
-          </form>
           <a href="#" class="btn btn-outline-light position-relative">
             <i class="fas fa-shopping-cart fa-lg"></i>
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
@@ -60,43 +44,92 @@
       <table class="table align-middle">
         <thead>
           <tr>
-            <th class="text-center">Viaje</th>
+            <th class="text-center">Imagen</th>
             <th>Producto</th>
-            <th class="text-end">Precio</th>
+            <th class="text-end">Precio Unitario</th>
             <th class="text-center">Cantidad</th>
             <th class="text-end">Total</th>
             <th class="text-center">Acciones</th>
           </tr>
         </thead>
         <tbody>
+          <!-- Producto 1 -->
           <tr>
             <td class="text-center">
-              <img src="imagenes/ElBosqueEncantadoLothlórien.jpeg" class="img-thumbnail" alt="Producto" style="width: 120px; height: auto;">
+              <img src="imagenes/ElBosqueEncantadoLothlórien.jpeg" class="img-thumbnail" alt="Producto 1" style="width: 100px;">
             </td>
             <td>Expedición al Monte del Destino</td>
             <td class="text-end">150€</td>
             <td class="text-center">
-              <input type="number" class="form-control" value="1" style="width: 70px; display: inline-block;">
+              <input type="number" class="form-control d-inline-block" value="1" min="1" style="width: 70px;">
             </td>
             <td class="text-end">150€</td>
             <td class="text-center">
-              <button class="btn btn-danger">Eliminar</button>
+              <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+            </td>
+          </tr>
+          <!-- Producto 2 -->
+          <tr>
+            <td class="text-center">
+              <img src="imagenes/LasMajestuosasMontañasRohan.jpeg" class="img-thumbnail" alt="Producto 2" style="width: 100px;">
+            </td>
+            <td>Amanecer en las Montañas de Gondor</td>
+            <td class="text-end">100€</td>
+            <td class="text-center">
+              <input type="number" class="form-control d-inline-block" value="2" min="1" style="width: 70px;">
+            </td>
+            <td class="text-end">200€</td>
+            <td class="text-center">
+              <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="text-end">
-      <h3>Total: 150€</h3>
-      <button class="btn btn-secondary">Seguir Explorando</button>
-      <button class="btn btn-warning">Proceder al Pago</button>
+
+    <!-- Botón Seguir Explorando -->
+    <div class="text-start my-3">
+      <button class="btn btn-warning">Seguir Explorando</button>
+    
+    </div>
+
+    <!-- Resumen del Pedido -->
+    <div class="row mt-5">
+      <div class="col-md-6 offset-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Resumen del Pedido</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Subtotal:</span>
+                <span>350€</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Impuestos (10%):</span>
+                <span>35€</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Envío:</span>
+                <span>10€</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between fw-bold">
+                <span>Total:</span>
+                <span>395€</span>
+              </li>
+            </ul>
+            <div class="mt-3">
+              <a href="#" class="btn btn-warning w-100">Proceder al Pago</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
   <footer class="bg-dark text-white py-4">
     <div class="container">
       <div class="row text-center text-md-start">
-        <div class="col-12 col-md-4 mb-3 mb-md-0">
+        <div class="col-md-4 mb-3">
           <h4 class="fw-bold">Síguenos</h4>
           <div class="d-flex justify-content-center justify-content-md-start mt-3">
             <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f fa-lg"></i></a>
@@ -105,11 +138,11 @@
             <a href="#" class="text-white mx-2"><i class="fab fa-youtube fa-lg"></i></a>
           </div>
         </div>
-        <div class="col-12 col-md-4 mb-3 mb-md-0">
+        <div class="col-md-4 mb-3">
           <h4 class="fw-bold">Contacto</h4>
           <p>Email: info@latierramedia.com <br> Teléfono: +34 123 456 789</p>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-md-4">
           <h4 class="fw-bold">Políticas de la Agencia</h4>
           <p><a href="#" class="text-white">Devoluciones</a> | <a href="#" class="text-white">Privacidad</a> | <a href="#" class="text-white">Términos y Condiciones</a></p>
         </div>
@@ -118,7 +151,6 @@
       <p class="text-muted small mb-0 text-center">&copy; 2024 La Tierra Media. Todos los derechos reservados.</p>
     </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
